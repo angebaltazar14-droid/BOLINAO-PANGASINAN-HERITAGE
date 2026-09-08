@@ -1,0 +1,337 @@
+/* ==================== GLOBAL ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ==================== MAIN CONTAINER ==================== */
+.main-container {
+  max-width: 1200px;
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ==================== HEADER ==================== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo h1 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #003366;
+}
+
+.logo p {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #666;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.search-btn {
+  background-color: #003366;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 60px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+.hero-content h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background-color: #ffd700;
+  color: #003366;
+  font-weight: bold;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+/* ==================== FEATURED DESTINATION ==================== */
+.featured-section {
+  padding: 40px;
+}
+
+.featured-title {
+  text-align: center;
+  font-size: 24px;
+  color: #003366;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* GINAWA KONG 4 COLUMNS PARA MAGKASYA LAHAT */
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 220px; /* BINABAAN KO NG KONTI PARA MAGKASYA */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-overlay i {
+  color: #ffd700;
+  font-size: 20px;
+}
+
+.card-overlay span {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* ==================== ABOUT SECTION ==================== */
+.about-section {
+  padding: 40px;
+  background-color: white;
+}
+
+.about-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.about-image img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Responsive para sa mobile */
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr); /* PARA SA MOBILE: 2 COLUMNS LANG */
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+  
+  .about-image img {
+    width: 100%;
+  }
+}
+/* ==================== DESTINATIONS SECTION ==================== */
+.destinations-section {
+  padding: 40px;
+  background-color: white;
+}
+
+.destinations-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #003366;
+}
+
+.destination-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.destination-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.destination-image img {
+  width: 600px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.destination-info {
+  flex: 1;
+}
+
+.destination-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.destination-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Responsive para sa mobile */
+@media (max-width: 768px) {
+  .destination-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .destination-image img {
+    width: 100%;
+  }
+}

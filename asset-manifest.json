@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BOLINAO-PANGASINAN-HERITAGE/static/css/main.88062bf1.css",
+    "main.js": "/BOLINAO-PANGASINAN-HERITAGE/static/js/main.e3c09d3c.js",
+    "index.html": "/BOLINAO-PANGASINAN-HERITAGE/index.html",
+    "main.88062bf1.css.map": "/BOLINAO-PANGASINAN-HERITAGE/static/css/main.88062bf1.css.map",
+    "main.e3c09d3c.js.map": "/BOLINAO-PANGASINAN-HERITAGE/static/js/main.e3c09d3c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88062bf1.css",
+    "static/js/main.e3c09d3c.js"
+  ]
+}
